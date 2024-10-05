@@ -38,9 +38,7 @@ git clone https://github.com/NVIDIA/MinkowskiEngine
 cd MinkowskiEngine
 python setup.py install --blas_include_dirs=${CONDA_PREFIX}/include --blas=openblas
 
-# Download pre-trained weights
-wget ftp://8.219.154.255/ckpt.zip -O ./ckpt.zip
-unzip ./ckpt.zip
+# Download pre-trained weights from release v1.0.0
 ```
 
 Code has been tested with Ubuntu 20.04, GCC 9.4.0, Python 3.7, PyTorch 1.9.0, CUDA 11.2 and PyTorch3D 0.6.2.
