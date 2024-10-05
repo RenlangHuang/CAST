@@ -1,0 +1,99 @@
+{
+    "seed": 1,
+    "log_steps": 200,
+    "save_steps": 2000,
+    "dataset": "nuscenes",
+    "runname": "cast",
+    "log_dir": "./logs/nuscenes/",
+    "snapshot_dir": "./ckpt/nuscenes/",
+    "data_list": "./data/nuscenes_list/",
+
+    "data": {
+        "root": "/media/jacko/SSD//nuscenes/",
+        "num_workers": 4,
+        "npoints": 20000,
+        "voxel_size": 0.3,
+        "augment": 0.5
+    },
+
+    "model": {
+        "kpconv_layers": 5,
+        "voxel_size": 0.3,
+        "input_dim": 1,
+        "init_dim": 64,
+        "kernel_size": 15,
+        "init_radius": 0.975,
+        "init_sigma": 0.6,
+        "neighbor_limits": [19, 26, 36, 45, 46],
+
+        "k": 12,
+        "spots": 4,
+        "down_k": 4,
+        "spot_k": 12,
+        "dense_neighbors": 6,
+        "input_dim_f": 512,
+        "input_dim_c": 2048,
+        "output_dim": 256,
+        "hidden_dim": 128,
+        "desc_dim": 32,
+        "num_heads": 4,
+        "dropout": null,
+        "activation_fn": "relu",
+        "sigma_c": 1.8,
+        "seed_threshold": 0.3,
+        "seed_num": 48,
+        "blocks": 3,
+        
+        "sigma_r": 1.2,
+        "use_overlap_head": false,
+        "overlap_threshold": 0.2,
+        "keypoint_node_threshold": 1.8,
+        "local_matching_radius": 1.0,
+        "dual_normalization": true,
+
+        "patch_k": 24,
+        "num_neighbors": 4,
+        "learnable_matcher": true,
+        "filter_layers": 3,
+        "filter_sigma_d": 1.0,
+        "ransac": false
+    },
+
+    "optim": {
+        "lr": 1e-4,
+        "step_size": 5,
+        "weight_decay": 1e-4,
+        "gamma": 0.9,
+        "max_epoch": 3,
+        "clip_grad_norm": 0.5
+    },
+    
+    "loss": {
+        "positive_margin": 0.1,
+        "negative_margin": 1.4,
+        "positive_optimal": 0.1,
+        "negative_optimal": 1.4,
+        "log_scale": 40,
+        "positive_overlap": 0.2,
+        
+        "r_p": 0.45,
+        "r_n": 0.6,
+
+        "weight_det_loss": 1.0,
+        "weight_spot_loss": 0.1,
+        "weight_feat_loss": 0.2,
+        "weight_desc_loss": 1.0,
+        "weight_overlap_loss": 1.0,
+        "weight_corr_loss": 1.0,
+        "weight_trans_loss": 5.0,
+        "weight_rot_loss": 20.0,
+        "pretrain_feat_epochs": 1
+    },
+
+    "eval": {
+        "hit_threshold": 0.3,
+        "acceptance_overlap": 0.0,
+        "rre_threshold": 5.0,
+        "rte_threshold": 2.0
+    }
+}
