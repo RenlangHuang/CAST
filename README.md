@@ -203,7 +203,7 @@ python demo_3dmatch.py --split test --benchmark 3DMatch --id 0
 
 #### Data preparation
 
-This dataset can be downloaded from [here](https://share.phys.ethz.ch/~gsg/3DSmoothNet/data/ETH.rar) or our release, which is organized as follows after unzipping it:
+This dataset can be downloaded [here](https://share.phys.ethz.ch/~gsg/3DSmoothNet/data/ETH.rar), which is organized as follows after unzipping it:
 - `ETH`
     - `gazebo_summer`
         - `gt.log`
