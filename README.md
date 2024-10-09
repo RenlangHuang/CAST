@@ -223,4 +223,4 @@ python finetune.py
 ```
 
 ## Acknowledgements
-We sincerely thank the area chair for the appreciations of our work, and we sincerely thank all of the reviewers for their constructive reviews and valuable suggestions. Meanwhile, we would like to thank the authors of [D3Feat](https://github.com/XuyangBai/D3Feat.pytorch), [PREDATOR](https://github.com/prs-eth/OverlapPredator), [GeoTransformer](https://github.com/qinzheng93/GeoTransformer), and [REGTR](https://github.com/yewzijian/RegTR) for making their source codes public.
+We sincerely thank the area chair for the appreciation of our work, and we sincerely thank all of the reviewers for their constructive reviews and valuable suggestions. Meanwhile, we would like to thank the authors of [D3Feat](https://github.com/XuyangBai/D3Feat.pytorch), [PREDATOR](https://github.com/prs-eth/OverlapPredator), [GeoTransformer](https://github.com/qinzheng93/GeoTransformer), and [REGTR](https://github.com/yewzijian/RegTR) for making their source codes public.
