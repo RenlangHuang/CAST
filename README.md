@@ -6,7 +6,7 @@ Official PyTorch implementation of the paper [''A Consistency-Aware Spot-Guided 
 
 We present a novel consistency-aware spot-guided Transformer to achieve compact, consistent coarse matching and efficient, accurate pose estimation for point cloud registration. At the coarse matching stage, our consistency-aware self-attention enhances the feature representations with sparse sampling from the geometric compatibility graph.Additionally, our spot-guided cross-attention leverages local consistency to guide the cross-attention to confident spots without interfering with relevant areas. Based on these semi-dense and consistent coarse correspondences, a lightweight and scalable sparse-to-dense fine matching module empowered by local attention can achieve accurate pose estimation without optimal transport or hypothesis-and-selection pipelines. Our method has showcased *state-of-the-art* accuracy, robustness, and efficiency for point cloud registration across different 3D sensors and scenarios.
 
-![](assets/cast.png)
+![](assets/cast.jpg)
 
 
 ### 2. Installation
