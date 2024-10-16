@@ -1,6 +1,6 @@
 ## A Consistency-Aware Spot-Guided Transformer for Versatile and Hierarchical Point Cloud Registration
 
-Official PyTorch implementation of the paper [''A Consistency-Aware Spot-Guided Transformer for Versatile and Hierarchical Point Cloud Registration''](https://openreview.net/forum?id=btLLWaOrFs&nesting=2&sort=date-desc) accepted by NeurIPS 2024 as poster.
+Official PyTorch implementation of the paper [''A Consistency-Aware Spot-Guided Transformer for Versatile and Hierarchical Point Cloud Registration''](https://arxiv.org/abs/2410.10295) accepted by NeurIPS 2024 as poster.
 
 ### 1. Introduction
 
