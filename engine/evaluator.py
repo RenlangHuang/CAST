@@ -83,7 +83,7 @@ class Evaluator(nn.Module):
         if self.scene == 'indoor':
             indices = output_dict['corr_confidence'] > 0.1 * torch.max(output_dict['corr_confidence'])
             results['IR'] = self.evaluate_inlier_ratio(output_dict['corres'][indices], output_dict['gt_transform'])
-            FMR = results['IR'].gt(self.inlier_distance_threshold).float()
+            FMR = results['IR'].gt(self.inlier_ratio_threshold).float()
             results['RE'] = re; results['TE'] = te
             results['RRE'] = rre; results['RTE'] = rte
             if not self.training:
